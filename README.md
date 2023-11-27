@@ -1,8 +1,5 @@
-# React + Vite
+# Projeto Final Programação Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu projeto final de React.jsx para a cadeira de Programação Web no segundo semestre da faculdade de ADS.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O intuito do projeto é simular um site de catalogação de animes, permitindo que o usuário marque quais séries assistiu e também que avalie-as com uma nota de 1-5 estrelas.
