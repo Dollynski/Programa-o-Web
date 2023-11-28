@@ -1,28 +1,30 @@
 import { useState, useEffect } from "react"
-import { dados } from "../../public/animes.js"
-import Animes from "./Animes"
+import { dados } from "../../public/animes"
+import CardAnime from "./CardAnime"
 
-function Body() {
+function Novidades(props) {
   const [animes, setAnimes] = useState([])
 
   useEffect(() => {
     setAnimes(dados)
   }, [])
 
-  const listaAnimes = animes.map(animes => (
-    <Animes
-      key={animes.id}
-      animes={animes}
+  const listaAnimes = animes.map(anime => (
+    <CardAnime
+      key={anime.id}
+      anime={anime}
+      adicionaAnime={props.adicionaAnime}
     />
   ))
 
   return (
-    <div className="container mt-3" style={{ height: 823 }}>
-      <h1>Catálogo de Animes</h1>
+    <div className="container mt-3">
+      <h3>Novidades: animes disponíveis para alugar</h3>
       <div className="row">
         {listaAnimes}
+      </div>
     </div>
-    </div>
-  );
+  )
 }
-export default Body;
+
+export default Novidades
